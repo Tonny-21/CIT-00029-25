@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration of Patient</title>
+</head>
+
+<body>
+    <h2>Patient Registration Form</h2>
+
+    <form action="" method="post" name="registration">
+
+        <p>
+            Full Name: <br />
+            <input type="text" name="patient_name" placeholder="Enter full name" maxlength="50" required />
+        </p>
+
+        <p>
+            Age: <br />
+            <input type="number" name="age" min="0" max="120" placeholder="Enter age" required />
+        </p>
+
+        <p>
+            Gender: <br />
+            <input type="radio" name="gender" id="male" value="male" checked="checked" />
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="other" value="other" />
+            <label for="other">Other</label>
+        </p>
+
+        <p>
+            National ID Number: <br />
+            <input type="text" name="id_number" placeholder="Enter ID number" maxlength="20" required />
+        </p>
+
+        <p>
+            Patient ID: <br />
+            <input type="text" name="patient_id" placeholder="e.g., PAT-10023" maxlength="15" required />
+        </p>
+
+        <p>
+            Phone Number: <br />
+            <input type="tel" name="phone_number" placeholder="Enter phone number" required />
+        </p>
+
+        <p>
+            Health Status / Pre-existing Conditions: <br />
+            <textarea name="health_status" id="health_status" cols="30" rows="5"
+                placeholder="List any medical conditions or symptoms"></textarea>
+        </p>
+
+        <p>
+            Address: <br />
+            <textarea name="address" id="address" cols="30" rows="3"
+                placeholder="Enter address"></textarea>
+        </p>
